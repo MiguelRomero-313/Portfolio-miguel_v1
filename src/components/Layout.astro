@@ -1,0 +1,32 @@
+---
+import Nav from "./Nav.jsx";
+import Footer from "./Footer.jsx";
+import "./Layout.css";
+
+interface Props {
+  pageTittle?: string;
+  pageDescription?: string;
+}
+
+const { pageTittle, pageDescription } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={pageDescription} />
+    <title>Miguel Romero: {pageTittle}</title>
+  </head>
+  <body>
+    <div class="sticky-navbar">
+      <Nav client:only />
+    </div>
+    <div class="m-ctn">
+      <slot />
+    </div>
+    <Footer />
+  </body>
+</html>

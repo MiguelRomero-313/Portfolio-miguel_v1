@@ -1,0 +1,53 @@
+.navbar {
+  background-color: #f1eded;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a.brand {
+  margin: 10px;
+  padding: 10px;
+  letter-spacing: 2.5px;
+}
+
+ul.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li.nav-item {
+  padding-left: 15px;
+}
+
+li.nav-item a:hover {
+  color: #a022a0;
+}
+
+button.btn-menu {
+  background-color: #330033;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  transition: 0.3s all linear;
+}
+
+button.btn-menu:hover {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-menu .react-icons {
+  padding: 5px 15px 0px 15px;
+  width: 30px;
+  height: 30px;
+}

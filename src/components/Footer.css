@@ -1,0 +1,33 @@
+.contacto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 30px 25px;
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+  height: 150px;
+  background-image: url("/wave.png");
+  background-color: #f1eded;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.contacto h3 {
+  color: blueviolet;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.react-icons {
+  padding: 0px 1rem;
+  width: 35px;
+  height: 50px;
+  transition: 0.7s all;
+  color: #f1eded;
+}
+
+.react-icons:hover {
+  color: rgb(177, 94, 255);
+}
+
+.credits {
+  padding-top: 1rem;
+  letter-spacing: 2px;
+}
