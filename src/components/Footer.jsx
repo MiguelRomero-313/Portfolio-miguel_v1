@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
+import { BsLinkedin } from "react-icons/bs";
 //Componente footer
 import { IconContext } from "react-icons";
 
@@ -11,12 +12,20 @@ const Footer = () => {
         <h3>Contact me!</h3>
         <IconContext.Provider value={{ className: "react-icons" }}>
           <a
-            href="https://github.com/MiguelRlia117"
+            href="https://github.com/MiguelRomero-313"
             target="_blank"
             id="s-link"
             title="GitHub"
           >
             <BsGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/miguel-isai-romero-rios-lia313/"
+            target="_blank"
+            id="s-link"
+            title="LikedIn"
+          >
+            <BsLinkedin />
           </a>
           <a target="_blank" id="s-link" title="email">
             <HiOutlineMail />

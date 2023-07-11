@@ -21,9 +21,7 @@ const { pageTittle, pageDescription } = Astro.props;
     <title>Miguel Romero: {pageTittle}</title>
   </head>
   <body>
-    <div class="sticky-navbar">
-      <Nav client:only />
-    </div>
+    <Nav client:only />
     <div class="m-ctn">
       <slot />
     </div>

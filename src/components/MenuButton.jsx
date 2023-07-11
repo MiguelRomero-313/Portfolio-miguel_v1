@@ -16,7 +16,7 @@ const MenuButton = ({ isRender }) => {
     return (
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a href="">Home</a>
+          <a href="#start">Start</a>
         </li>
         <li className="nav-item">
           <a href="">About me</a>

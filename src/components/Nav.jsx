@@ -19,8 +19,13 @@ const Nav = () => {
   return (
     <nav>
       <div className="navbar">
-        <a className="brand" href="#start">
-          MIGUEL ROMERO
+        <a href="#start" className="brand" title="Start">
+          <img
+            src="./logotype_miguel-romero.png"
+            alt="Logotipo"
+            className="logo"
+          />
+          Miguel Romero
         </a>
         <MenuButton isRender={vWidth} />
       </div>
