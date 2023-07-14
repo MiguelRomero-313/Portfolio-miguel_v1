@@ -1,14 +1,15 @@
 .navbar {
   background-color: #f1eded;
-  padding: 1.5rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navbar a {
   text-decoration: none;
+  font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -45,7 +46,7 @@ li.nav-item {
 }
 
 li.nav-item a:hover {
-  color: #a022a0;
+  color: rgba(155, 155, 35, 1);
 }
 
 button.btn-menu {

@@ -3,6 +3,7 @@
   background-image: url("./banner.jpg");
   background-size: 100%;
   color: rgb(216, 232, 47);
+  font-size: 13.5px;
   border-radius: 15px;
   display: flex;
   padding: 2rem;
