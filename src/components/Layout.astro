@@ -14,17 +14,21 @@ const { pageTittle, pageDescription } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="/logotype_miguel-romero.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href=`${import.meta.env.BASE_URL}/logotype_miguel-romero.png`
+    />
     <meta name="viewport" content="width=device-width, initial" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={pageDescription} />
     <title>Miguel Romero: {pageTittle}</title>
   </head>
   <body>
-    <Nav client:only />
+    <Nav client:only="react" />
     <div class="m-ctn">
       <slot />
     </div>
-    <Footer />
+    <Footer client:visible />
   </body>
 </html>

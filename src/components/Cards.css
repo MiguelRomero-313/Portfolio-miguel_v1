@@ -1,87 +1,101 @@
+/*General styles for de main card*/
 .card {
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   font-family: monospace;
   font-size: 20px;
+  text-align: center;
   color: black;
   border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: 1.5rem;
+  padding: 3rem 2rem 3rem 2rem;
 }
 
-.about-card {
-  display: flex;
-  justify-content: space-around;
+.card:last-child {
+  border-radius: 15px 15px 0 0;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  margin-bottom: 1px;
 }
 
-.skills-card {
-  width: 100%;
-  padding: 1rem 0 1rem 0;
+.card h2 {
+  margin-top: 0px;
 }
+
+/*Styles for the about card*/
+.about-text {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: justify;
+}
+
+/*Styles for the skills card*/
 .skills-card ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   justify-content: space-evenly;
-  padding: 10px;
 }
 
 .skills-card img {
   width: 55px;
+  transition: 0.2s all linear;
 }
 
-.projects-card {
-  margin: 0;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
+.skills-card#skills img:hover {
+  width: 65px;
 }
-
-.projects-list {
-  padding-top: 15px;
+/*Styles for the projects card*/
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+.project-card {
   display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-
-.projects-list li a {
-  text-decoration: none;
-  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
-  border-radius: 15px;
+  font-size: 13.5px;
+  text-align: justify;
+  background-color: #f1eded;
+  border-radius: 10px;
+}
+#project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#project-text p {
+  height: 60px;
 }
 
+.project-card img {
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+/*Styles for the resume card*/
+.resume-card iframe {
+  width: 80%;
+  border: none;
+  height: 400px;
+}
+
+/*Responsive design*/
 @media only screen and (max-width: 600px) {
   .card {
     font-size: 18px;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
-  .about-card {
-    flex-direction: column-reverse;
+  .about-text {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-  .skills-card {
-    width: 50%;
-    padding: 0;
   }
   .skills-card ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .projects-list {
-    padding: 0;
-    flex-direction: column;
-  }
-  .projects-list li {
-    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }

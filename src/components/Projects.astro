@@ -1,15 +1,56 @@
 ---
 import Card from "./Card.astro";
+import ProjectButton from "./ProjectButton";
 import "./Cards.css";
+
+const projects = [
+  {
+    name: "Mistery Lux: Landing page",
+    description:
+      "A simple landing page for school project about a business idea for selling candles with dedications",
+    image: "./mistery-lux_landing.png",
+    link: "https://github.com/MiguelRlia117/MisteryLux-Landing",
+    demo: "https://miguelrlia117.github.io/MisteryLux-Landing/",
+  },
+  {
+    name: "React: Shopping cart",
+    description: "A simple Shopping Cart made with react hooks",
+    image: "./mistery-lux_landing.png",
+    link: "",
+    demo: "",
+  },
+  {
+    name: "Express: User Authenticator",
+    description:
+      "User authenticator made with ExpressJs and data encryption with JWT",
+    image: "./jwt-img.png",
+    link: "",
+    demo: "",
+  },
+];
 ---
 
 <Card>
-  <div class="projects-card">
-    <h2>Mis últimos proyectos</h2>
-    <ul class="projects-list">
-      <li><a href="">1</a></li>
-      <li><a href="">2</a></li>
-      <li><a href="">3</a></li>
-    </ul>
+  <div class="projects-card" id="projects">
+    <h2>My last projects</h2>
+    <div class="project-list">
+      {
+        projects.map((project) => (
+          <div class="project-card">
+            <div id="project-text">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <ProjectButton
+                buttonLink={project.link}
+                buttonDemo={project.demo}
+                client:visible
+              />
+            </div>
+
+            <img src={project.image} style="width: 200px;height:100px" />
+          </div>
+        ))
+      }
+    </div>
   </div>
 </Card>
