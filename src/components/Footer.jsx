@@ -27,7 +27,7 @@ const Footer = () => {
           >
             <BsLinkedin />
           </a>
-          <a target="_blank" id="s-link" title="email">
+          <a href="mailto: isairomero313@gmail.com" id="s-link" title="email">
             <HiOutlineMail />
           </a>
         </IconContext.Provider>
