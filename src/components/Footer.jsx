@@ -1,8 +1,7 @@
 import "./Footer.css";
-import pkg from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { IconContext } from "react-icons";
-const { BsGithub, BsLinkedin } = pkg;
 //Componente footer
 
 const Footer = () => {
