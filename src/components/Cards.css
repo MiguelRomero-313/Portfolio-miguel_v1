@@ -1,7 +1,7 @@
 /*General styles for de main card*/
 .card {
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
   font-family: monospace;
   font-size: 20px;
   text-align: center;
@@ -13,9 +13,8 @@
 
 .card:last-child {
   border-radius: 15px 15px 0 0;
-  margin-top: 3rem;
-  padding: 0.5rem;
-  margin-bottom: 1px;
+  padding: 1rem;
+  margin-bottom: -5px;
 }
 
 .card h2 {
@@ -27,6 +26,10 @@
   display: flex;
   flex-direction: row-reverse;
   text-align: justify;
+}
+
+.about-text p {
+  font-size: 23px;
 }
 
 /*Styles for the skills card*/
@@ -59,7 +62,7 @@
   padding: 1rem;
   font-size: 13.5px;
   text-align: justify;
-  background-color: #f1eded;
+  background-color: #eaeaea;
   border-radius: 10px;
 }
 #project-text {

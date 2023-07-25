@@ -1,9 +1,9 @@
 .profile-card {
   /*img link: https://unsplash.com/photos/mZnx9429i94*/
-  background-image: url("./banner.jpg");
+  background-image: url("/portfolio/banner.jpg");
   background-size: 100%;
   color: rgb(216, 232, 47);
-  font-size: 13.5px;
+  font-size: 13.7px;
   text-align: justify;
   border-radius: 15px;
   display: flex;
@@ -12,11 +12,13 @@
 }
 
 .animated-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   backdrop-filter: blur(2px);
   background-color: #330033a9;
   border-radius: 10px;
-  margin-right: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 1.5rem 0 0.5rem;
   font-family: monospace;
 }
 .animated-text {
@@ -27,7 +29,8 @@
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(13), cursor 0.4s step-end infinite alternate;
-  margin: 1rem 0 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
+  padding-right: 5px;
 }
 
 @keyframes cursor {
@@ -68,6 +71,7 @@
   }
   .animated-text {
     font-size: 2.5em;
-    width: 355px;
+    padding-right: 2px;
+    width: auto;
   }
 }
