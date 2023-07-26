@@ -1,7 +1,8 @@
-import { BiMenu } from "react-icons/bi";
+import pkg from "react-icons/bi/index";
 import { IconContext } from "react-icons";
 import { useState } from "react";
 import NavItems from "./NavItems";
+const { BiMenu } = pkg;
 
 /*Navbar button component - main component */
 //only render if window size is less than 600
