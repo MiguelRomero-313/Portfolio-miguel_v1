@@ -7,3 +7,5 @@ My first personal portfolio created with:
 - CSS
 
 ![Miguel-romero_portfolio](./public/preview_portfolio.png)
+
+live demo: https://miguelromero-313.github.io/portfolio/
