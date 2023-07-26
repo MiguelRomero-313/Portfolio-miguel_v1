@@ -1,6 +1,6 @@
 import "./Footer.css";
-//import pkg from "react-icons/bs/index";
-//const { BsLinkedin, BsGithub } = pkg;
+import pkg from "react-icons/bs/index";
+const { BsLinkedin, BsGithub } = pkg;
 import { HiOutlineMail } from "react-icons/hi";
 import { IconContext } from "react-icons";
 //Componente footer
@@ -11,7 +11,7 @@ const Footer = () => {
       <div>
         <h3>Contact me!</h3>
         <IconContext.Provider value={{ className: "react-icons" }}>
-          {/* <a
+          <a
             href="https://github.com/MiguelRomero-313"
             target="_blank"
             id="s-link"
@@ -26,7 +26,7 @@ const Footer = () => {
             title="LikedIn"
           >
             <BsLinkedin />
-          </a> */}
+          </a>
           <a href="mailto: isairomero313@gmail.com" id="s-link" title="email">
             <HiOutlineMail />
           </a>

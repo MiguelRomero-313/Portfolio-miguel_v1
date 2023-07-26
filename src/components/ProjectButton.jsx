@@ -1,5 +1,6 @@
 import { IconContext } from "react-icons";
-import { BsGithub } from "react-icons/bs";
+import pkg from "react-icons/bs";
+const { BsGithub } = pkg;
 import { TbWorldWww } from "react-icons/tb";
 import "./ProjectButton.css";
 
