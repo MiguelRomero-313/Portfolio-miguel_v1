@@ -8,4 +8,4 @@ My first personal portfolio created with:
 
 ![Miguel-romero_portfolio](./public/preview_portfolio.png)
 
-live demo: https://miguelromero-313.github.io/portfolio/
+portfolio deploy with gh pages: https://miguelromero-313.github.io/portfolio/
