@@ -1,17 +1,23 @@
 /*Navbar basic structure*/
 .navbar {
-  background-color: #f1eded;
-  padding: 1.5rem 3rem 1.5rem 3rem;
+  background-color: #eee;
+  padding: 0 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0px;
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 5px black;
 }
 
 .navbar a {
   text-decoration: none;
   font-size: 19px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
 /*Navbar logotype*/
 a.brand {
@@ -40,6 +46,8 @@ ul.navbar-nav {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  width: 80%;
+  justify-content: flex-end;
 }
 
 li.nav-item {
@@ -55,11 +63,11 @@ li.nav-item:hover {
 
 /*Navbar button on screen less than 600px*/
 button.btn-menu {
+  display: none;
   background-color: #330033;
   margin: 0;
   padding: 0;
   border-radius: 15px;
-  transition: 0.3s all linear;
 }
 
 button.btn-menu:hover {
@@ -68,6 +76,8 @@ button.btn-menu:hover {
 }
 
 .btn-menu .react-icons {
+  display: block;
+  color: white;
   margin: 5px 10px 0px 10px;
   width: 30px;
   height: 30px;
@@ -77,8 +87,18 @@ button.btn-menu:hover {
 @media only screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 0.5rem;
   }
+
+  button.btn-menu {
+    display: block;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    padding: 1rem;
+  }
+
   ul.navbar-nav {
     flex-direction: column;
     width: 100%;
@@ -86,7 +106,7 @@ button.btn-menu:hover {
     font-size: 50px;
   }
   li.nav-item {
-    padding: 0px 0px 15px 15px;
+    padding: 0;
     margin: 0;
   }
   li.nav-item:hover {

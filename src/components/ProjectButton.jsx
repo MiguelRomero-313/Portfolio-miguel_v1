@@ -11,7 +11,7 @@ const ProjectButton = ({ buttonLink, buttonDemo }) => {
       <button className="project-btn">
         <a
           href={buttonLink != "" ? buttonLink : null}
-          target="_blank"
+          //          target="_blank"
           title="Project Repo"
         >
           <IconContext.Provider value={{ className: "project-icons" }}>

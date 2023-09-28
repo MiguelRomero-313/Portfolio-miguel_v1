@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </IconContext.Provider>
       </div>
-      <div className="credits">2023, Miguel Romero: intern developer</div>
+      <div className="credits">2023, Miguel Romero: Developer</div>
     </footer>
   );
 };
