@@ -5,11 +5,12 @@ const { BiMenu } = pkg;
 
 /*Navbar button component - main component */
 const NavButton = () => {
-  const [visibility, setVisibility] = useState(null);
-
-  window.onload = () => {
-    window.innerWidth <= 600 ? setVisibility(false) : setVisibility(true);
-  };
+  const [visibility, setVisibility] = useState(() => {
+    if (window.innerWidth < 600) {
+      return false;
+    }
+    return true;
+  });
 
   window.onresize = () => {
     window.innerWidth <= 600 ? setVisibility(false) : setVisibility(true);
